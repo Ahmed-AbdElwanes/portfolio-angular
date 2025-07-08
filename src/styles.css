@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+@import "tailwindcss";
+nav {
+  box-shadow: 0px 1px 10px 2px #747474;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.skill:hover,
+.project-card:hover,
+.contact-card:hover,
+.timeline-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover i {
+  transform: rotate(180deg);
+}
+
+.logo-img {
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* .mobile-menu {
+  display: none;
+} */
+
+.lg\:hidden .mobile-menu {
+  display: block;
+}
+
+/* .nav-links {
+  display: flex;
+} */
+
+/* .lg\:hidden .nav-links {
+  display: none;
+} */
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+  padding: 1rem;
+}
+
+.dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+.dark .bg-white {
+  background-color: rgb(25, 30, 37);
+}
+
+.dark .bg-gray-100 {
+  background-color: rgb(24, 36, 59);
+}
+
+.dark .bg-gray-50 {
+  background-color: rgb(19, 20, 26);
+}
+
+.dark .text-gray-700 {
+  color: #e2e8f0;
+}
+
+.dark .text-blue-900 {
+  color: #63b3ed;
+}
+
+.dark .hover\:text-orange-600:hover {
+  color: #ed8936;
+}
+
+.dark .bg-orange-600 {
+  background-color: #c05621;
+}
+
+.dark .hover\:bg-orange-700:hover {
+  background-color: #9c4221;
+}
+
+.dark .hover\:bg-gray-200:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+.dark .skill:hover {
+  background-color: rgb(29, 35, 44);
+}
+
+.dark .nav-links.active {
+  background-color: #2d3748;
+}
+
+img {
+  pointer-events: none;
+}

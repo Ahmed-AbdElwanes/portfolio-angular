@@ -1,0 +1,22 @@
+.project-card::before {
+  content: "";
+  position: absolute;
+  background-color: oklch(74.128% 0.18082 56.25);
+  z-index: 2;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.project-card:hover::before {
+  width: 100%;
+}
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}

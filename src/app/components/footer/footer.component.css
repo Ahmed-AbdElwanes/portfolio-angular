@@ -1,0 +1,23 @@
+.footer-bg {
+  background: linear-gradient(135deg, #1e3a8a, #f97316);
+  position: relative;
+  overflow: hidden;
+}
+
+#footer-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.footer-content {
+  z-index: 10;
+}
+
+footer a {
+  z-index: 2;
+}
+/*  */
